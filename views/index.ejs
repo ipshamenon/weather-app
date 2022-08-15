@@ -1,0 +1,21 @@
+<%- include("partials/header") -%>
+   
+
+      <%  let result = results[0]; %> 
+        <h1> Weather App </h1>
+
+        <div class="container">
+         
+          <form action="/" method="post">
+            <div class="input-data">
+              <label id="cityInput"></label>
+              <input type="text" name="cityName" placeholder="Search for your city!" required autocomplete="off"> 
+              <button id="submitButton" type="submit">Go</button>
+            </div>  
+          </form>
+        </div>
+
+       
+        
+  
+    <%- include("partials/footer") -%> 

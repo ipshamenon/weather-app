@@ -1,0 +1,67 @@
+body{
+  background-color:#2D4263;
+  margin: 0%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 45px;
+  color: #f8ecd3;
+}
+
+.container{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-container{
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+}
+
+#newSearchButton {
+  font-family: 'Montserrat', sans-serif;
+  height: 55px;
+  width: 160px;
+  background-color: #C84B31;
+  color: #f8ecd3;
+  border: none;
+  border-radius: 5px;
+  margin: 50px auto;
+  font-size: 20px;
+}
+
+input{
+ font-family: 'Montserrat', sans-serif;
+ width: 20%;
+ padding: 5px;
+ border: none;
+ border-bottom: 1.5px solid #f8ecd3 ;
+ background-color: transparent;
+ font-size: 20px;
+ color: #f8ecd3;
+ outline: none;
+}
+
+.input-data #submitButton{
+  font-family: 'Montserrat', sans-serif;
+  height: 35px;
+  width: 80px;
+  background-color: #C84B31;
+  color: #f8ecd3;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.input-data{
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  color: #f8ecd3;
+}
