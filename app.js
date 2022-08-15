@@ -39,12 +39,14 @@ app.post("/", function (req, res){
             const temperature = weatherData.main.temp;
             const weatherDescription = weatherData.weather[0].description;
             const icon = weatherData.weather[0].icon;
+            const countryCode = weatherData.sys.country;
             const imageURL = "http://openweathermap.org/img/wn/" + icon +"@2x.png";
             const result = {
                 query: query,
-                temperature: temperature,
+                temperature: Math.round(temperature),
                 weatherDescription: weatherDescription,
-                icon: icon,
+                imageURL: imageURL,
+                country: countryCode,
             }
             
             resultsInfo.unshift(result);

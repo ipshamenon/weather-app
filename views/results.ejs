@@ -1,19 +1,24 @@
 <%- include("./partials/header") -%> 
 
-        <h1> Weather App </h1>
+<h1> Weather Forecast </h1>
+
+<div class="results-container">
 
           <div class= "card-container">
               <% let result = results[0]; %>
-            <h3> <%= result.query %>  </h3>
-           <h1> <%= result.temperature %>  </h1> 
-           <img src= <%= result.icon %> >
-           <p> <%= result.weatherDescription %> </p>
+            <h3 class="cityResult"> <%= result.query %>  </h3>
+            <h2 class="countryCode"> <%= result.countryCode %> </h2>
+           <h1 class="tempResult"> <%= result.temperature %><span>&#8457;</span></h1> 
+           <img class="imgResult" src= <%= result.imageURL %> >
+           <p class="descriptionResult"> <%= result.weatherDescription %> </p>
 
           </div>
 
-          <a href="/"><button id="newSearchButton">Search New Location!</button></a>
+          
+            <a href="/"><button id="newSearchButton">Search New Location!</button></a>
+      
+          </div>
+          
           
 
 
-
-    <%- include("./partials/footer") -%> 

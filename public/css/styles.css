@@ -1,7 +1,8 @@
 body{
   background-color:#2D4263;
-  margin: 0%;
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
+  
 }
 
 h1{
@@ -11,27 +12,38 @@ h1{
   color: #f8ecd3;
 }
 
-.container{
+h3{
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #f8ecd3;
+  padding: 50px;
+}
+.results-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-container{
-  max-width: 400px;
-  margin: 50px auto;
-  background: white;
-  border-radius: 5px;
+  width: 320px;
+  height:480px;
+  background: #f5edd9;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 #newSearchButton {
   font-family: 'Montserrat', sans-serif;
-  height: 55px;
-  width: 160px;
+  height: 50px;
+  width: 320px;
   background-color: #C84B31;
   color: #f8ecd3;
   border: none;
-  border-radius: 5px;
-  margin: 50px auto;
+  border-radius: 15px;
   font-size: 20px;
+  position: relative;
+  top: 20px;
+  
 }
 
 input{
@@ -48,8 +60,9 @@ input{
 
 .input-data #submitButton{
   font-family: 'Montserrat', sans-serif;
-  height: 35px;
-  width: 80px;
+  height: 45px;
+  width: 90px;
+  font-size: 20px;
   background-color: #C84B31;
   color: #f8ecd3;
   border: none;
@@ -59,9 +72,65 @@ input{
 
 .input-data{
   text-align: center;
+  position: relative;
+  top: 50px;
+}
+
+::placeholder{
+  color: #e9836f;
+}
+
+.cityResult{
+  padding: 10px 30px 1px 30px ;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+.countryCode{
+  color: black;
+  font-size: 50px;
+}
+.tempResult{
+  color: black;
+  padding: 10px 30px 1px 30px ;
+  text-align: left;
+  font-size: 70px;
+}
+
+span {
+font-weight: normal;
+font-size: 40px;
+position: relative;
+top: -22px;
+left: 5px;
+}
+
+.descriptionResult{
+  padding: 0 0 1px 80px ;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: black;
+  position: relative;
+  top: -20px;
+}
+.imgResult{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: -35px;;
 }
 
 footer{
   text-align: center;
   color: #f8ecd3;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 }
