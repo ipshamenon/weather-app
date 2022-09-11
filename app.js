@@ -40,13 +40,15 @@ app.post("/", function (req, res){
             const weatherDescription = weatherData.weather[0].description;
             const icon = weatherData.weather[0].icon;
             const countryCode = weatherData.sys.country;
-            const imageURL = "http://openweathermap.org/img/wn/" + icon +".png";
+            const windSpeed = weatherData.wind.speed;
+            const imageURL = "http://openweathermap.org/img/wn/" + icon +"@2x.png";
             const result = {
                 query: query,
                 temperature: Math.round(temperature),
                 weatherDescription: weatherDescription,
                 imageURL: imageURL,
                 country: countryCode,
+                windSpeed: windSpeed,
             }
             
             resultsInfo.unshift(result);

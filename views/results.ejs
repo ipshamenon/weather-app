@@ -6,14 +6,12 @@
 
           <div class= "card-container">
               <% let result = results[0]; %>
-              <img class="imgResult" src= <%= result.imageURL %> >
+              <img class="imgResult" src= <%= result.imageURL %>> 
               <h1 class="tempResult"> <%= result.temperature %><span>&#8457;</span></h1> 
-              <p class="descriptionResult"> <%= result.weatherDescription %> </p>
               <h3 class="cityResult"> <%= result.query + ", " + result.country %>  </h3>
+              <p class="descriptionResult"> <%= result.weatherDescription %> </p>
+              <p class="windSpeedResult"> <%= "Wind Speed: " + result.windSpeed + " mph" %> </p>
                
-           
-            
-
           </div>
 
           
